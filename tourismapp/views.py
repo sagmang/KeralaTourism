@@ -22,3 +22,6 @@ def KANNUR(request):
 #....kozhikode page....
 def KOZHIKODE(request):
     return render(request, 'KOZHIKODE.html') 
+
+def CONTACT(request):
+    return render(request, 'CONTACT.html') 

@@ -8,4 +8,5 @@ urlpatterns = [
     path('ALAPPUZHA',views.ALAPPUZHA,name='ALAPPUZHA'),
     path('KANNUR',views.KANNUR,name='KANNUR'),
     path('KOZHIKODE',views.KOZHIKODE,name='KOZHIKODE'),
+    path('CONTACT',views.CONTACT,name='CONTACT'),
 ]
