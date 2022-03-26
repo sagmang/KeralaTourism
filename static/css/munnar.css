@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+ background-image:url("/static/image/munnarimg.jpg") ;
+ background-position:center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position:absolute ;
+ width: auto;
+ overflow-x: hidden;
+ 
+
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: black;
+ color: white;
+ line-height: 60px;
+ opacity: .8;
+}
+
+ul{
+  padding: 0;
+  margin: 0 0 0 100px;
+  list-style: none;
+  text-decoration: none;
+}
+navbar-nav flex-row{
+  color: white;
+}
+li{
+  
+  list-style: none;
+  text-decoration: none;
+
+}
+.logo img{
+  position: absolute;
+  margin-top:15px;
+  margin-left: 10px;
+}
+nav a{
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.col{
+ margin-top:20% ;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+
+
+}
+.container {
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+.container h2{
+ color: blue;
+ text-align: center;
+}
+
+.title {
+ color: #1a1a1a;
+ text-align: center;
+ margin-bottom: 10px
+}
+
+.content {
+margin-top: 100px;
+position: relative;
+width: 90%;
+max-width: 400px;
+margin: auto;
+overflow: hidden;
+
+}
+
+.content .content-overlay {
+background: rgba(0, 0, 0, 0.7);
+position: absolute;
+height: 99%;
+width: 100%;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+opacity: 0;
+-webkit-transition: all 0.4s ease-in-out 0s;
+-moz-transition: all 0.4s ease-in-out 0s;
+transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+opacity: 1
+}
+
+.content-image {
+width: 100%;
+
+}
+
+img {
+box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+border-radius: 5px
+}
+
+.content-details {
+position: absolute;
+text-align: center;
+padding-left: 1em;
+padding-right: 1em;
+width: 100%;
+top: 50%;
+left: 50%;
+opacity: 0;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+-webkit-transition: all 0.3s ease-in-out 0s;
+-moz-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+top: 50%;
+left: 50%;
+opacity: 1
+}
+
+.content-details h3 {
+color: #fff;
+font-weight: 500;
+letter-spacing: 0.15em;
+margin-bottom: 0.5em;
+text-transform: uppercase
+}
+
+.content-details p {
+color: #fff;
+font-size: 0.8em
+}
+
+.fadeIn-bottom {
+top: 80%
+}
+.img-fluid{
+margin-bottom: 10px;
+}
+h5{
+text-align: center;
+color: darkblue;
+}
+p{
+text-align: center;
+}
+.newsletter{
+padding: 30px;
+background-color: #19beda;
+}
+.newsletter .content{
+max-width: 500px;
+}
+.newsletter .content h2{
+margin-bottom: 30px;
+color: #243c4f;
+}
+.newsletter .content .form-control{
+height: 50px;
+border-color: #ffffff;
+border-radius: 0;
+}
+.newsletter .content .form-control:focus{
+box-shadow: none;
+border: 2px solid #243c4f;
+}
+.newsletter .content .btn{
+min-height: 50px;
+border-radius: 0;
+background-color:#243c4f;
+color: #ffffff;
+font-weight: 600;
+}
+a{
+color: black;
+}
+h6{
+text-align: center;
+}
+.container-fluid{
+margin-top: 20px;
+margin-bottom: 20px;
+}

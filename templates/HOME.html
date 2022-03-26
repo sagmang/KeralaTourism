@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KERALA TOURISM</title>
+	<link rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+	<header>
+      
+		<!--<div class="logo">
+			<a href="#"><img src="logo.png"></a>
+		</div>-->
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<!--	<a href="#"><span style="font-size:25px; color: white;">Keralatourism.<span style="color:yellow;">org</span></span><br><span style="font-size:15px; color: white;">WelcometoGod'sOwnCountry</span></a>
+				<div class="d-flex flex-row">
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-youtube"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-whatsapp"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>-->
+			<!-- Brand -->
+			<!--<a class="navbar-brand" href="#">Navbar</a>-->
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'HOME' %}">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'SIGNIN' %}">SIGN IN</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'SIGNUP' %}">SIGN UP</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+   <section>
+        
+      <div class="row">
+         <div class="col">
+            <a href="https://www.keralatourism.org/kerala-travel-mart/page/46">
+                <img src="{% static 'image/4.jpg' %}" class="img-fluid">
+            </a>
+         </div>
+      </div>
+   </section>
+   <section>
+   <div class="container pb-4 bg-light">
+      <h2>Experience Kerala</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="content"> <a href="#">
+                    <div class="content-overlay"></div> <img class="content-image" src="{% static 'image/teyyam.jpg' %}">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">THEYYAM</h3>
+                        <p class="content-text">Theyyam is a famous ritual art form that originated in North Kerala which brings to life the grat stories of our State. It encompasses dance, mime and music.</p>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content"> <a href="#">
+                    <div class="content-overlay"></div> <img class="content-image" src="{% static 'image/Beypore_Beach1.jpg' %}">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">BEYPORE</h3>
+                        <p class="content-text">Beypore is a historic place located in Kozhikode district on the banks of the Chaliyar River</p>
+                    </div>
+                </a> 
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content"> <a href="#">
+                    <div class="content-overlay"></div> <img class="content-image" src="{% static 'image/Shiropichu1.jpg' %}">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">AYURVEDA</h3>
+                        <p class="content-text">Pichu therapy in Ayurveda is a palliative measure. It is recommended for the remediation of cranial nerve disorders caused by Vata imbalances</p>
+                    </div>
+                </a> 
+            </div>
+        </div>
+    </div>
+    
+   </div>
+   <div class="col-md-12 pt-4 pb-4 text-center">
+      <a href="https://www.keralatourism.org/specialities/" class="btn btn-primary">FIND MORE EXPERIENCES</a>
+   </div>
+   </section>
+   <section >
+       <div class="container">
+   <br><br><h2 class="tex-center">Top Destinations</h2><br><br>
+   <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="{% url 'MUNNAR' %}"><img src="{% static 'image/munnar-1.jpg' %}" class="img-fluid"></a>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="{% url 'ALAPPUZHA' %}"><img src="{% static 'image/alappuzha-1.jpg' %}" class="img-fluid"></a>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="#"><img src="{% static 'image/hill-palace-3.jpg' %}" class="img-fluid"></a>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="{% url 'KANNUR' %}"><img src="{% static 'image/aralam-1.jpg' %}" class="img-fluid"></a>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="#"><img src="{% static 'image/Muzhappilangad-Beach2.jpg' %}" class="img-fluid"></a>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+         <a href="{% url 'KOZHIKODE' %}"><img src="{% static 'image/thusharagiri.jpg' %}" class="img-fluid"></a>
+       </div>
+    <div>
+   </div>
+   <div class="col-md-12 pt-4 pb-4 text-center">
+      <a href="https://www.keralatourism.org/destination/" class="btn btn-primary">EXPLORE OUR DESTINATIONS</a>
+   </div>
+   </section>
+      
+</header> 
+<footer>
+   <div class="container tex-center ">
+      <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+            <h5>Explore</h5>
+            <p><a href="https://www.keralatourism.org/business/">Classification Scheme</a></p>
+            <p><a href="https://www.keralatourism.org/governmental-affairs/">Governmental Affairs</a></p>
+            <p><a href="#">Media Room</a></p>
+            <p><a href="#">Tourism Events</a></p>
+            <p><a href="#">Maps</a></p>
+            <p><a href="#">Site Map</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+            <h5>Travel Hub</h5>
+            <p><a href="https://www.keralatourism.org/kerala-at-a-glance/">Kerala at a Glance</a></p>
+            <p><a href="https://www.keralatourism.org/travelcare/">Travel Care</a></p>
+            <p><a href="#">Where to Stay</a></p>
+            <p><a href="#">How to?</a></p>
+            <p><a href="#">Travel Tips</a></p>
+         </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+            <h5>Nature</h5>
+            <p><a href="https://www.keralatourism.org/destination/hills/">Hills</a></p>
+            <p><a href="#">Backwater</a></p>
+            <p><a href="#">Beaches</a></p>
+            <p><a href="#">Wildlife</a></p>
+            <p><a href="#">Waterfalls</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+             <h5>Places</h5>
+            <p><a href="{% url 'MUNNAR' %}">Munnar</a></p>
+            <p><a href="#">Wayanad</a></p>
+            <p><a href="#">Kovalam</a></p>
+            <p><a href="#">Periyar</a></p>
+            <p><a href="#">Varkala</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+             <h5>Specialities</h5>
+            <p><a href="#">Ayurveda</a></p>
+            <p><a href="#">Monsoon</a></p>
+            <p><a href="#">Houseboat</a></p>
+            <p><a href="#">Kerala Food</a></p>
+            <p><a href="#">Festivals</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 tex-center">
+             <h5>Videos/Photos</h5>
+            <p><a href="#">Videos</a></p>
+            <p><a href="#">Photos</a></p>
+            <p><a href="#">360&deg; Videos</a></p>
+            <p><a href="#">Royalty Free Photos</a></p>
+            <p><a href="#">Wallpapers</a></p>
+          </div>
+      </div>
+   </div>
+   <section class="newsletter">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="content">
+                  <h2>Subscribe Our Newsletter</h2>                  <div class="input-group">
+                     <input type="email" class="form-control" placeholder="Enter your email">
+                     <span class="input-group-btn">
+                        <button class="btn" type="submit">SUBSCRIBE</button>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <p>For Business/Trade/Classifications and Tenders please visit</p>
+      <span style="font-size: 24px;"><a href="http://www.keralatourism.gov.in/"><p>www.keralatourism.gov.in</p></a></span>
+   <div class="col-md-12 pt-4 pb-4 text-center">
+      <a href="https://www.keralatourism.org/recruitments" class="btn btn-primary">RECRUITMENTS</a>
+   </div>
+   </section>
+   <!--<div class="container">
+      <div class="row">
+         <div class="col-md-1">
+            <img src="11.png" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="12.jpg" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="13.jpg" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="14.png" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="15.png" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="16.jpg" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="17.jpg" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="19.jpg" class="img-fluid">
+         </div>
+         <div class="col-md-1">
+            <img src="22.jpg" class="img-fluid">
+         </div>
+      </div>
+   </div>-->
+   <div class="container-fluid">
+      <h6>Toll free No: 1-800-425-4747(Within India only)</h2>
+            <p>
+               Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Keral, India - 695 033<br>
+                 Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: info@keralatourism.org.<br>
+                 All rights reserved &#169; Kerala Tourism 2022. Copyright | Terms of Use | Cookie Policy | Contact Us.<br>
+                 Developed & Maintained by Invis multimedia.<br>
+             </p>
+   </div>
+
+</footer>   
+</body>
+</html>	
